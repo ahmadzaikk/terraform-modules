@@ -15,7 +15,7 @@ output tgw_subnet_ids {
 
 output private_subnet_ids {
   description = "list of private subnet ids"
-  value       = module.vpc_private_subnets.subnet_ids
+  value       = module.vpc.private_subnets.subnet_ids
 }
 
 output private_cidr_block {
