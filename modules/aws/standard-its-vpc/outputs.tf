@@ -18,7 +18,7 @@ output private_subnet_ids {
   value       = module.vpc_private_subnets.subnet_ids
 }
 
-output vpc_cidr_block {
+output private_cidr_block {
 description = "virtual private cloud CIDR block"
 value       = module.vpc_private_subnets.*.cidr_block
 }
