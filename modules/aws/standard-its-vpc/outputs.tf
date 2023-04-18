@@ -18,6 +18,11 @@ output private_subnet_ids {
   value       = module.vpc_private_subnets.subnet_ids
 }
 
+output vpc_cidr_block {
+description = "virtual private cloud CIDR block"
+value       = module.vpc_private_subnets.*.cidr_block
+}
+  
 output data_subnet_ids {
   description = "list of data subnet ids"
   value       = module.vpc_data_subnets.subnet_ids
